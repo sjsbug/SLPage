@@ -1,0 +1,202 @@
+/* General */
+
+body {
+	overflow-y: hidden;
+}
+
+/* Computer */
+
+.grid_1 { width: 33%; } 
+.grid_2 { width: 34%; } 
+.grid_3 { width: 33%; } 
+.grid_9 { width: 100%; }
+
+.grid_1,
+.grid_2,
+.grid_3 {
+	margin: 0 0 0 0;
+	float: left;
+	display: block;
+	position: relative;
+	min-width: 264px;
+	overflow: hidden;
+	height: 100%;
+}
+
+.grid_4 {
+	margin: 0;
+	float: left;
+	display: block;
+	position: relative;
+	min-width: 100px;
+	overflow: visible;
+	height: 100%;
+}
+
+.alpha{padding-left:2px;}
+.omega{padding-right:2px;}
+
+.container{
+	width: 100%;
+	min-width: 400px;
+	margin: auto;
+	height: 100%;
+}
+
+.colorcont {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+}	
+
+.Tbwimg, 
+.Dbwimg, 
+.Mbwimg { width: 100%; height: 100%; z-index: 0; min-height: 800px; min-width: 400px;}
+
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
+
+
+.trichanges {
+	z-index: 1;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	-o-transition: opacity 1.2s, -o-transform 1.2s;
+	-moz-transition: opacity 1.2s, -moz-transform 1.2s;
+	-webkit-transition: opacity 1.2s, -webkit-transform 1.2s; 
+    transition: opacity 1.2s, transform 1.2s;
+/*	overflow: hidden;
+*/	display: block;
+	}
+
+.trichanges:hover {
+	opacity: 1;
+	}
+
+.MIhorizdiv {
+	height: 15%;
+	width: 100%;
+	top: 35%;
+	position: absolute;
+	z-index: 2;
+	padding-top: 100px;
+}
+	
+#MItix:hover ~ #Tcolimg {
+	opacity: 1;
+}	
+	
+#MIdon:hover ~ #Dcolimg {
+	opacity: 1;
+}	
+	
+#MImem:hover ~ #Mcolimg {
+	opacity: 1;
+}
+	
+.centrdiv {
+	height: auto;
+	width: 15%;
+	margin: auto;
+	min-width: 75px;
+}
+	
+.titlediv {
+	height: 23%;
+	width: 100%;
+	top: 23%;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	z-index: 2;
+	position: absolute;
+	color: white;
+}
+
+.secondmanage {
+	font-size: 135%;
+	top: 3em;
+	position: absolute;
+}
+
+.manage {
+	position: static;
+}	
+	
+.appicon {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	z-index: 7;
+}
+
+.secondary {
+	top: 0px;
+}
+
+.button {
+    background-color: #999999;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px 8px;
+	margin: auto;
+    text-align: center;
+	-o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+	z-index: 9001;
+
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+
+/* Restructure on window resize */
+
+@media screen and (max-width : 834px) {
+
+body {
+	overflow: visible;
+}
+
+.grid_1,
+.grid_2,
+.grid_3 {
+	width: 100%;
+}
+
+.grid_1,
+.grid_3 {
+	height: 33%;
+	min-height: 150px;
+}
+
+.grid_2 {
+	height: 34%;
+	min-height: 150px;
+}
+
+.centrdiv {
+	height: 25%;
+	width: auto;
+	margin: auto;
+}
+
+.titlediv {
+	top: 15%;
+}
+
+.omega {
+	padding-top: 0px;
+}
+
+.Tbwimg, 
+.Dbwimg, 
+.Mbwimg { width: 100%; height: auto; z-index: 0; }
+
+
+}
