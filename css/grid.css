@@ -1,7 +1,19 @@
 /* General */
 
+@font-face {
+    font-family: 'verlaglight';
+    src: url('Type/verlag_light-webfont.eot');
+    src: url('Type/verlag_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Type/verlag_light-webfont.woff') format('woff'),
+         url('Type/verlag_light-webfont.ttf') format('truetype'),
+         url('Type/verlag_light-webfont.svg#verlaglight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	overflow-y: hidden;
+	font-family: 'verlaglight', sans-serif;
 }
 
 /* Computer */
@@ -106,8 +118,8 @@ body {
 	height: 23%;
 	width: 100%;
 	top: 23%;
-	font-family: 'Roboto', sans-serif;
-	text-align: center;
+/*	font-family: 'Verlaglight', sans-serif;
+*/	text-align: center;
 	z-index: 2;
 	position: absolute;
 	color: white;
@@ -121,7 +133,8 @@ body {
 
 .manage {
 	position: static;
-}	
+/*	font-family: 'Verlaglight', sans-serif;
+*/}	
 	
 .appicon {
 	width: 100%;
@@ -147,7 +160,6 @@ body {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 	z-index: 9001;
-
 }
 
 .button:hover {
